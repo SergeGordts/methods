@@ -1,0 +1,53 @@
+To install `ultralytics==8.0.196` in an Anaconda environment, you can follow these steps:
+
+1. **Open Anaconda Prompt**: This is the command line interface that comes with Anaconda.
+
+2. **Activate Your Conda Environment**: If you have an existing environment where you want to install the package, activate it using:
+
+   conda activate your_environment_name
+
+   Replace `your_environment_name` with the name of your Anaconda environment. If you don't have an environment set up, you can create one using:
+
+   conda create --name your_environment_name python=3.8
+   conda activate your_environment_name
+
+
+3. **Install pip**: Ensure that `pip` is installed in your environment. You can install it using:
+
+   conda install pip
+
+
+4. **Install `ultralytics` using pip**: Use `pip` to install the specific version of the `ultralytics` package:
+
+   pip install ultralytics==8.0.196
+
+### Verifying Installation
+
+After installation, you can verify that `ultralytics` has been installed correctly by checking its version:
+
+
+python -c "import ultralytics; print(ultralytics.__version__)"
+
+
+This command should output `8.0.196` if the installation was successful.
+
+
+Ensure Jupyter is Using the Correct Kernel
+
+Make sure that Jupyter is using the same environment where `ultralytics` is installed. You can install the `ipykernel` package and add the environment as a Jupyter kernel:
+
+1. **Install `ipykernel`**:
+
+   pip install ipykernel
+
+
+2. **Add the Environment to Jupyter**:
+
+   python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+
+   Replace `myenv` with the name of your environment.
+
+3. **Select the Kernel in Jupyter Notebook**:
+   - Open Jupyter Notebook.
+   - Go to `Kernel` -> `Change kernel`.
+   - Select `Python (myenv)`.
