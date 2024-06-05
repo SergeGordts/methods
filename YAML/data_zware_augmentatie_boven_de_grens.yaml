@@ -1,0 +1,5 @@
+train: C:/Users/Gordts-De Laender/Desktop/Methods/Opdracht/Eigen/sampleSize2000/training_sets/zware_augmentatie/boven_de_grens/images/train
+val: C:/Users/Gordts-De Laender/Desktop/Methods/Opdracht/Eigen/sampleSize2000/training_sets/zware_augmentatie/boven_de_grens/images/val
+test: C:/Users/Gordts-De Laender/Desktop/Methods/Opdracht/Eigen/sampleSize2000/training_sets/zware_augmentatie/boven_de_grens/images/test
+nc: 1
+names: ['car']

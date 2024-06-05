@@ -1,0 +1,23 @@
+Deze notebook test de verbetering in auto-detectie door YOLOv8 wanneer deze opeenvolgende getraind wordt met steeds meer geaugmenteerde beelden. Deze beelden imiteren schemerings-weeromstandigheden.
+
+Gebruiksaanwijzing:
+1) De jupyter notebook draait in een conda omgeving waarin de yolo omgeving is geinstalleerd en maakt gebruik van dezelfde kernel als de conda-omgeving. De volgende commando's zijn hiertoe vereist na het aanmaken van een conda omgeving:
+    pip install ultralytics==8.0.196
+    pip install ipykernel
+    python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+    **Vervang `myenv` door de naam van je omgeving.
+waarna de juiste kernel in de notebook kan worden geselecteerd.
+
+2) Download en plaats je dataset (labels en images) lokaal.
+
+3) In de notebook geef je in de 2 eerste CODE-cellen de sample-grootte en de het totale aantal beelden in, en de plaats van de labels en beelden die in de rest van de code worden gebruikt. Het totaal aantal beelden ondergaat een uitzuivering, vandaar dat dit groter is dan de uiteindelijke sample die in de code wordt gebruikt. De uitzuivering zorgt ervoor dat we enkel beelden die een auto bevatten (geen pickup trucks,geen beelden zonder auto's...) in de sample hebben.
+
+Output:
+Bij het laten lopen van de notebook worden een aantal folders automatisch aangemaakt die nodig zijn voor het model (zie oa codecel 2 voor de folders).
+Er worden 6 datasets aangemaakt die opeenvolgend worden gebruikt voor het trainen van het YOLOv8. De resultaten (meestal in grafiekvorm) staan in het laatste deel van de notebook en in de folder die YOLOv8 zelf aanmaakt bij het trainen en testen van het model (./runs...)
+
+
+
+
+
+    
