@@ -47,6 +47,8 @@ Make sure that Jupyter is using the same environment where `ultralytics` is inst
 
    Replace `myenv` with the name of your environment.
 
+   python -m ipykernel install --user --name mydev_environment --display-name "Python (mydev_environment)"
+
 3. **Select the Kernel in Jupyter Notebook**:
    - Open Jupyter Notebook.
    - Go to `Kernel` -> `Change kernel`.
